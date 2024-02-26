@@ -51,11 +51,16 @@ downArrow.classList.add("hide")
 // freccia sotto
 downArrow.addEventListener("click", function(){
 
+  upArrow.classList.remove("hide")
+
 // aggiungo la classe hide all elemento con contatore decrementato 
   imagesCollection[counter--].classList.add("hide");
 // tolgo la classe hide all elemento con il contatore decrementato
   imagesCollection[counter].classList.remove("hide")
 
+  if(counter === 0){
+    downArrow.classList.add("hide")
+  }
 
   console.log(counter);
 })
