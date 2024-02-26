@@ -45,6 +45,7 @@ img{
   transition: all .3s;
   line-height: 40px;
   text-align: center;
+  cursor: pointer;
 }
 
 .arrow:hover{

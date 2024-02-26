@@ -30,14 +30,36 @@ for(let i = 0; i < images.length; i++){
 // freccia sopra
 upArrow.addEventListener("click", function(){
 
+
+  // if(counter === images.length-1){
+  //   // upArrow.classList.add("hide")
+  //   counter = 0
+
+  // }else{
+  //   counter++
+  // }
+
+  // let previousIndex 
+  // if(counter === 0){
+  //   images.length - 1
+  // }else{
+  //   counter - 1
+  // }
+
+  // imagesCollection[previousIndex].classList.add("hide")
+
+
   // aggiungo la classe hide all elemento con counter non ancora incrementato
   imagesCollection[counter++].classList.add("hide");
   // tolgo la classe hide all elemneto con contatore incrementato
   imagesCollection[counter].classList.remove("hide")
 
   if(counter === images.length-1){
-    upArrow.classList.add("hide")
+   upArrow.classList.add("hide")
   }
+
+  // se il counter raggiunge l ultimo elemento dell array la freccia su acquisisce hide
+
 
   downArrow.classList.remove("hide")
 
@@ -45,6 +67,9 @@ upArrow.addEventListener("click", function(){
   // console.log(counter);
 
 })
+
+
+
 
 downArrow.classList.add("hide")
 
@@ -58,6 +83,7 @@ downArrow.addEventListener("click", function(){
 // tolgo la classe hide all elemento con il contatore decrementato
   imagesCollection[counter].classList.remove("hide")
 
+  // se il contatore raggiunge lo 0, quindi il limite dell array la freccia in giu riceve la classe hide
   if(counter === 0){
     downArrow.classList.add("hide")
   }
