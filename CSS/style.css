@@ -40,12 +40,27 @@ img{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 2rem;
+  color: darkred;
+  transition: all .3s;
+  line-height: 40px;
+  text-align: center;
+}
+
+.arrow:hover{
+  background-color: white;
+  color: red;
 }
 
 .down{
   bottom: 5px;
+
 }
 
 .up{
   top: 5px;
+}
+
+.hide{
+  display: none;
 }
